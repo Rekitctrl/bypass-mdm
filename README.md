@@ -24,7 +24,7 @@
 
 4. Enter Recovery Mode & Open Safari.
 
-5. Navigate to https://www.github.com/assafdori/bypass-mdm
+5. Navigate to https://github.com/Rekitctrl/bypass-mdm
 
 6. Copy the script below:
 
@@ -38,11 +38,11 @@ curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/bypass-mdm.sh -
 
 9. Input 1 for Autobypass.
 
-10. Press Enter to leave the default username 'Apple'.
+10. Preset username 'Apple'.
 
-11. Press Enter to leave the default  password '1234'.
+11. Preset password '1234'.
 
-12. Wait for the script to finish & Reboot your Mac.
+12. Wait for the script to finish & then reboot your Mac.
 
 13. Sign in with user (Apple) & password (1234)
 
