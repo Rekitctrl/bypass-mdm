@@ -34,7 +34,7 @@ curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/bypass-mdm.sh -
 
 7. Launch Terminal (Utilities > Terminal).
 
-8. Paste (<kbd>CMD</kbd> + <kbd>V</kbd>) and Run the script (<kbd>ENTER</kbd>).
+8. Paste (<kbd>CMD</kbd> + <kbd>V</kbd>) and Run the script (<kbd>ENTER</kbd>)
 
 9. Input 1 for Autobypass.
 
