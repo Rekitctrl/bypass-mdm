@@ -1,6 +1,6 @@
 # Bypass-MDM for MacOS
 
-![mdm-screen](https://raw.githubusercontent.com/Rekictrl/bypass-mdm/main/mdm-screen.png)
+![mdm-screen](https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/mdm-screen.png)
 
 #### Advised Approach ⚠️
 
