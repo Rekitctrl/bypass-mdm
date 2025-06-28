@@ -1,4 +1,4 @@
-# Bypass-MDM for MacOS 💻
+# Bypass-MDM for MacOS
 
 ![mdm-screen](https://raw.githubusercontent.com/Rekictrl/bypass-mdm/main/mdm-screen.png)
 
