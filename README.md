@@ -1,12 +1,16 @@
 # Bypass-MDM for MacOS 💻
 
-![mdm-screen](https://raw.githubusercontent.com/assafdori/bypass-mdm/main/mdm-screen.png)
+![mdm-screen](https://raw.githubusercontent.com/Rekictrl/bypass-mdm/main/mdm-screen.png)
 
-#### Prerequisites ⚠️
+#### Advised Approach ⚠️
 
-- **It is advised to erase the hard-drive prior to starting.**
-- **It is advised to re-install MacOS using an external flash drive.**
+- **Erase the hard-drive prior to starting.**
+- **Re-install MacOS**
 - **Device language needs to be set to English, it can be changed afterwards.**
+
+#### Warnings
+
+- **If you only reset all accounts and settings and don't do a re-install of Macos, the script may not work (it's finnicky)**
 
 
 #### Follow steps below to bypass MDM setup during a fresh installation of MacOS
@@ -26,7 +30,7 @@
 
 5. Navigate to https://github.com/Rekitctrl/bypass-mdm
 
-6. Copy the script below:
+6. Copy the command below:
 
 ```zsh
 curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/bypass-mdm.sh -o bypass-mdm.sh && chmod +x ./bypass-mdm.sh && ./bypass-mdm.sh
@@ -38,9 +42,9 @@ curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/bypass-mdm.sh -
 
 9. Input 1 for Autobypass.
 
-10. Preset username 'Apple'.
+10. Preset username 'Apple' (Cannot be changed for reliability).
 
-11. Preset password '1234'.
+11. Preset password '1234' (Cannot be changed for reliability).
 
 12. Wait for the script to finish & then reboot your Mac.
 
@@ -56,6 +60,6 @@ curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/bypass-mdm.sh -
 
 18. Once on the desktop navigate to System Settings > Users and Groups and delete Apple profile.
 
-19. Congratulations, you're MDM free! 💫
+19. You're MDM free
 
-###### Although it's virtually impossible to catch that you've removed the MDM (because it wasn't even configured), be aware that the serial number of the laptop will still be shown in the inventory system of your company. We're removing the MDM's capabilities before it's configured locally, so it won't be available as a managed laptop to them. Use with caution. Probably a good idea to have a valid excuse as well.
+###### Although it's virtually impossible to catch that you've removed the MDM (because it wasn't even configured), be aware that the serial number of the laptop will still be shown in the inventory system of your organization. This script removes MDM capabilities before it's configured locally, so it won't be available as a managed laptop to the organization. Use with caution. Probably a good idea to have a valid excuse as well.
