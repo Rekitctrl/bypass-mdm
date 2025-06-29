@@ -1,4 +1,4 @@
-# Bypass-MDM for MacOS
+# Bypass-MDM for MacOS (Tested up to MacOS Sequoia 15.5)
 
 ![mdm-screen](https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/mdm-screen.webp)
 
@@ -10,7 +10,7 @@
 
 #### Warnings
 
-- **If you only reset all accounts and settings and don't do a re-install of Macos, the script may not work (it's finnicky)**
+- **If you only reset all accounts and settings and don't do a re-install of Macos, the script may not work**
 
 
 #### Follow steps below to bypass MDM setup during a fresh installation of MacOS
@@ -32,9 +32,17 @@
 
 6. Copy the command below:
 
-```zsh
-curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/bypass-mdm.sh -o bypass-mdm.sh && chmod +x ./bypass-mdm.sh && ./bypass-mdm.sh
-```
+  Current Functional Version:
+
+  ```zsh
+  curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/bypass-mdm.sh -o bypass-mdm.sh && chmod +x ./bypass-mdm.sh && ./bypass-mdm.sh
+  ```
+
+  ⚠️ Beta Version:
+
+  ```zsh
+  curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/beta-bypass-mdm.sh -o beta-bypass-mdm.sh && chmod +x ./beta-bypass-mdm.sh && ./beta-bypass-mdm.sh
+  ```
 
 7. Launch Terminal (Utilities > Terminal).
 
