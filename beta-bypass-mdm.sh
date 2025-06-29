@@ -21,7 +21,7 @@ select opt in "${options[@]}"; do
     case $opt in
         "Bypass MDM from Recovery")
             # Bypass MDM from Recovery
-            echo -e "${YEL}Bypass MDM from Recovery"
+            echo -e "${YEL}Bypass MDM from Recovery${NC}"
             if [ -d "/Volumes/Macintosh HD - Data" ]; then
                 diskutil rename "Macintosh HD - Data" "Data"
             fi
@@ -34,9 +34,8 @@ select opt in "${options[@]}"; do
             username="Apple"
             passw="1234"
 
-            # Create User
             dscl_path='/Volumes/Data/private/var/db/dslocal/nodes/Default'
-            echo -e "${GREEN}Creating Temporary User"
+            echo -e "${GRN}Creating Temporary User${NC}"
             dscl -f "$dscl_path" localhost -create "/Local/Default/Users/$username"
             dscl -f "$dscl_path" localhost -create "/Local/Default/Users/$username" UserShell "/bin/zsh"
             dscl -f "$dscl_path" localhost -create "/Local/Default/Users/$username" RealName "$realName"
@@ -58,7 +57,7 @@ select opt in "${options[@]}"; do
             echo "0.0.0.0 mdmenroll.apple.com" >>/Volumes/Macintosh\ HD/etc/hosts
             echo "0.0.0.0 mdmcheckin.apple.com" >>/Volumes/Macintosh\ HD/etc/hosts
             echo "0.0.0.0 school.apple.com" >>/Volumes/Macintosh\ HD/etc/hosts
-            echo -e "${GRN}Successfully blocked MDM & Profile Domains"
+            echo -e "${GRN}Successfully blocked MDM & Profile Domains${NC}"
 
             # Remove configuration profiles
             touch /Volumes/Data/private/var/db/.AppleSetupDone
@@ -68,42 +67,20 @@ select opt in "${options[@]}"; do
             touch /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigRecordNotFound
 
             echo -e "${GRN}MDM enrollment has been bypassed${NC}"
-            echo -e "${NC}Exit terminal and reboot your Mac.${NC}"
-            break
-            ;;
-        "Disable Notification (SIP)")
-            # Disable Notification (SIP)
-            echo -e "${RED}Please Insert Your Password To Proceed${NC}"
-            sudo rm /var/db/ConfigurationProfiles/Settings/.cloudConfigHasActivationRecord
-            sudo rm /var/db/ConfigurationProfiles/Settings/.cloudConfigRecordFound
-            sudo touch /var/db/ConfigurationProfiles/Settings/.cloudConfigProfileInstalled
-            sudo touch /var/db/ConfigurationProfiles/Settings/.cloudConfigRecordNotFound
-            break
-            ;;
-        "Disable Notification (Recovery)")
-            # Disable Notification (Recovery)
-            rm -rf /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigHasActivationRecord
-            rm -rf /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigRecordFound
-            touch /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigProfileInstalled
-            touch /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigRecordNotFound
-            break
-            ;;
-        "Check MDM Enrollment")
-            # Check MDM Enrollment
-            echo ""
-            echo -e "${GRN}Check MDM Enrollment. Error is success${NC}"
-            echo ""
-            echo -e "${RED}Please Insert Your Password To Proceed${NC}"
-            echo ""
-            sudo profiles show -type enrollment
+
+            # Reboot the system
+            echo -e "${NC}Rebooting...${NC}"
+            sleep 2
+            reboot
             break
             ;;
         "Reboot & Exit")
             # Reboot & Exit
-            echo "Rebooting..."
+            echo -e "${NC}Rebooting...${NC}"
+            sleep 2
             reboot
             break
             ;;
-        *) echo "Invalid option $REPLY" ;;
+        *) echo "Invalid option $REPLY";;
     esac
 done
