@@ -10,6 +10,7 @@ CYAN='\033[1;36m'
 NC='\033[0m'
 
 # Display header
+echo ""
 echo -e "${CYAN}Bypass MDM By Rekitctrl${NC}"
 echo ""
 
@@ -27,6 +28,8 @@ select opt in "${options[@]}"; do
 
             # Create Temporary User
             echo -e "${NC}Creating a Temporary User"
+            echo -e "${GRN}Username: Apple"
+            echo -e "${GRN}Password: 1234"
             realName="Apple"
             username="Apple"
             passw="1234"
@@ -48,13 +51,13 @@ select opt in "${options[@]}"; do
             echo "0.0.0.0 deviceenrollment.apple.com" >>/Volumes/Macintosh\ HD/etc/hosts
             echo "0.0.0.0 mdmenrollment.apple.com" >>/Volumes/Macintosh\ HD/etc/hosts
             echo "0.0.0.0 iprofiles.apple.com" >>/Volumes/Macintosh\ HD/etc/hosts
-            echo “0.0.0.0 gdmf.apple.com” >>/Volumes/Macintosh\ HD/etc/hosts
-            echo “0.0.0.0 acmdm.apple.com” >>/Volumes/Macintosh\ HD/etc/hosts
-            echo “0.0.0.0 albert.apple.com” >>/Volumes/Macintosh\ HD/etc/hosts
-            echo “0.0.0.0 mdm.apple.com” >>/Volumes/Macintosh\ HD/etc/hosts
-            echo “0.0.0.0 mdmenroll.apple.com” >>/Volumes/Macintosh\ HD/etc/hosts
-            echo “0.0.0.0 mdmcheckin.apple.com” >>/Volumes/Macintosh\ HD/etc/hosts
-            echo “0.0.0.0 school.apple.com” >>/Volumes/Macintosh\ HD/etc/hosts
+            echo "0.0.0.0 gdmf.apple.com" >>/Volumes/Macintosh\ HD/etc/hosts
+            echo "0.0.0.0 acmdm.apple.com" >>/Volumes/Macintosh\ HD/etc/hosts
+            echo "0.0.0.0 albert.apple.com" >>/Volumes/Macintosh\ HD/etc/hosts
+            echo "0.0.0.0 mdm.apple.com" >>/Volumes/Macintosh\ HD/etc/hosts
+            echo "0.0.0.0 mdmenroll.apple.com" >>/Volumes/Macintosh\ HD/etc/hosts
+            echo "0.0.0.0 mdmcheckin.apple.com" >>/Volumes/Macintosh\ HD/etc/hosts
+            echo "0.0.0.0 school.apple.com" >>/Volumes/Macintosh\ HD/etc/hosts
             echo -e "${GRN}Successfully blocked MDM & Profile Domains"
 
             # Remove configuration profiles
