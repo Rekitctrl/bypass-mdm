@@ -10,7 +10,7 @@
 
 #### Warnings
 
-- **If you only reset all accounts and settings and don't do a re-install of Macos, the script may not work**
+- **If you only reset all accounts and settings and don't do a re-install of MacOs, the script may not work**
 
 
 #### Follow steps below to bypass MDM setup during a fresh installation of MacOS
