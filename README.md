@@ -12,7 +12,7 @@
 
 - **If you only reset all accounts and settings and don't do a re-install of MacOs, the script may not work**
 - **I do what I can to ensure these scripts are safe, however, use them at your own risk. I am not responsible for any damage that these scripts could cause**
-- **The BypassMDM.txt script has only been tested on a Flipper Zero running [Momentum](https://github.com/Next-Flip/Momentum-Firmware) firmware**
+- **The BypassMDM.txt BadKB script has only been tested on a Flipper Zero running [Momentum](https://github.com/Next-Flip/Momentum-Firmware) firmware**
 
 #### Notes
 
