@@ -11,7 +11,7 @@
 #### Warnings ⚠️
 
 - **If you only reset all accounts and settings and don't do a re-install of MacOs, the script may not work**
-- **I do what I can to ensure these scripts are safe, however, use them at your own risk. I am not responsible for any damage that this script could cause**
+- **I do what I can to ensure these scripts are safe, however, use them at your own risk. I am not responsible for any damage that these scripts could cause**
 
 #### Notes
 
