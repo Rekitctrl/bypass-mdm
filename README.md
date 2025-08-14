@@ -1,16 +1,21 @@
-# Bypass-MDM for MacOS (Tested up to MacOS Sequoia 15.5)
+# Bypass-MDM for MacOS (Tested up to MacOS Sequoia 15.6)
 
 ![mdm-screen](https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/mdm-screen.webp)
 
-#### Advised Approach ⚠️
+#### Advised Approach
 
 - **Erase the hard-drive prior to starting.**
 - **Re-install MacOS**
 - **Device language needs to be set to English, it can be changed afterwards.**
 
-#### Warnings
+#### Warnings ⚠️
 
 - **If you only reset all accounts and settings and don't do a re-install of MacOs, the script may not work**
+- **I do what I can to ensure these scripts are safe, however, use them at your own risk. I am not responsible for any damage that this script could cause**
+
+#### Notes
+
+- **The BadKB/RubberDucky version will not be frequently updated**
 
 
 #### Follow steps below to bypass MDM setup during a fresh installation of MacOS
@@ -37,7 +42,7 @@
   ```zsh
   curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/bypass-mdm.sh -o bypass-mdm.sh && chmod +x ./bypass-mdm.sh && ./bypass-mdm.sh
   ```
-  BadKB Version:
+  BadKB/RubberDucky Version:
   
   ```zsh
   curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/bypass-mdm-badkb.sh -o bypass-mdm-badkb.sh && chmod +x ./bypass-mdm-badkb.sh && ./bypass-mdm-badkb.sh
