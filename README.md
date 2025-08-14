@@ -12,6 +12,7 @@
 
 - **If you only reset all accounts and settings and don't do a re-install of MacOs, the script may not work**
 - **I do what I can to ensure these scripts are safe, however, use them at your own risk. I am not responsible for any damage that these scripts could cause**
+- **The BadKB script has only been tested on a Flipper Zero running [Momentum](https://github.com/Next-Flip/Momentum-Firmware) firmware**
 
 #### Notes
 
@@ -42,7 +43,7 @@
   ```zsh
   curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/bypass-mdm.sh -o bypass-mdm.sh && chmod +x ./bypass-mdm.sh && ./bypass-mdm.sh
   ```
-  BadKB/RubberDucky Version:
+  BadKB Version (Can be used on RubberDucky):
   
   ```zsh
   curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/bypass-mdm-badkb.sh -o bypass-mdm-badkb.sh && chmod +x ./bypass-mdm-badkb.sh && ./bypass-mdm-badkb.sh
