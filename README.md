@@ -12,11 +12,11 @@
 
 - **If you only reset all accounts and settings and don't do a re-install of MacOs, the script may not work**
 - **I do what I can to ensure these scripts are safe, however, use them at your own risk. I am not responsible for any damage that these scripts could cause**
-- **The BadKB script has only been tested on a Flipper Zero running [Momentum](https://github.com/Next-Flip/Momentum-Firmware) firmware**
+- **The BypassMDM.txt script has only been tested on a Flipper Zero running [Momentum](https://github.com/Next-Flip/Momentum-Firmware) firmware**
 
 #### Notes
 
-- **The BadKB/RubberDucky version will not be frequently updated**
+- **The BadKB version will not be frequently updated**
 
 
 #### Follow steps below to bypass MDM setup during a fresh installation of MacOS
