@@ -60,5 +60,5 @@ touch /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigR
 
 echo -e "${GRN}MDM enrollment has been bypassed${NC}"
 echo -e "${NC}Rebooting...${NC}"
-sleep 2
+sleep 5
 reboot
