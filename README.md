@@ -44,7 +44,7 @@
   ```zsh
   curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/bypass-mdm.sh -o bypass-mdm.sh && chmod +x ./bypass-mdm.sh && ./bypass-mdm.sh
   ```
-  BadKB Version (Can be used on RubberDucky):
+  BadKB Version:
   
   ```zsh
   curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/bypass-mdm-badkb.sh -o bypass-mdm-badkb.sh && chmod +x ./bypass-mdm-badkb.sh && ./bypass-mdm-badkb.sh
@@ -59,26 +59,24 @@
 
 8. Paste (<kbd>CMD</kbd> + <kbd>V</kbd>) and Run the script (<kbd>ENTER</kbd>)
 
-9. Input 1 for Autobypass.
+9. Preset username 'Apple' (Cannot be changed for reliability).
 
-10. Preset username 'Apple' (Cannot be changed for reliability).
+10. Preset password '1234' (Cannot be changed for reliability).
 
-11. Preset password '1234' (Cannot be changed for reliability).
+11. Wait for the script to finish & then reboot your Mac.
 
-12. Wait for the script to finish & then reboot your Mac.
+12. Sign in with user (Apple) & password (1234)
 
-13. Sign in with user (Apple) & password (1234)
+13. Skip all setup (Apple ID, Siri, Touch ID, Location Services)
 
-14. Skip all setup (Apple ID, Siri, Touch ID, Location Services)
+14. Once on the desktop navigate to System Settings > Users and Groups, and create your real Admin account.
 
-15. Once on the desktop navigate to System Settings > Users and Groups, and create your real Admin account.
+15. Log out of the Apple profile, and sign in into your real profile.
 
-16. Log out of the Apple profile, and sign in into your real profile.
+16. Feel free set up properly now (Apple ID, Siri, Touch ID, Location Services).
 
-17. Feel free set up properly now (Apple ID, Siri, Touch ID, Location Services).
+17. Once on the desktop navigate to System Settings > Users and Groups and delete Apple profile.
 
-18. Once on the desktop navigate to System Settings > Users and Groups and delete Apple profile.
+18. You're MDM free
 
-19. You're MDM free
-
-###### Although it's virtually impossible to catch that you've removed the MDM (because it wasn't even configured), be aware that the serial number of the laptop will still be shown in the inventory system of your organization. This script removes MDM capabilities before it's configured locally, so it won't be available as a managed laptop to the organization. Use with caution. Probably a good idea to have a valid excuse as well.
+###### Although it's virtually impossible to catch that you've removed the MDM (because it wasn't even configured), be aware that the serial number of the laptop will still be shown in the inventory system of your organization. This script removes MDM capabilities before it's configured locally, so it won't be available as a managed laptop to the organization. Use with caution. Probably a good idea to have a valid excuse as well. That is why I recommend a dual boot setup as it will allow you to periodically boot into the managed partition to allow the MDM to check in with your device.
