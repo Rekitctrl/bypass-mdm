@@ -16,7 +16,8 @@
 
 #### Notes
 
-- **The BadKB version will not be frequently updated**
+- **If you want to install this on a MDM device using dual boot (which I recommend), run the script on an unpartitioned Mac installation. Then you can partition the drive and install MacOS on the new partion (MDM works on it). This ensures you stay registered to the MDM servers without raising flags in their systems (Works as long as the MDM is not attatched to iBoot (Apple's version of a BIOS)).**
+- **The BadKB version will not be frequently updated but is intended to work offline (Still not developed)**
 
 
 #### Follow steps below to bypass MDM setup during a fresh installation of MacOS
