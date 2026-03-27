@@ -1,4 +1,4 @@
-# Bypass-MDM for MacOS (Tested up to MacOS Sequoia 15.6)
+# Bypass-MDM for MacOS (Tested up to MacOS Sequoia 26.3)
 
 ![mdm-screen](https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/mdm-screen.webp)
 
