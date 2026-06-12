@@ -394,6 +394,9 @@ select opt in "${options[@]}"; do
 		echo -e "  2. Reboot your Mac"
 		echo -e "  3. Login with username: ${YEL}$username${NC} and password: ${YEL}$passw${NC}"
 		echo ""
+		echo -e "  Auto reboot in 5 seconds..."
+		sleep 5
+		reboot
 		break
 		;;
 	"Reboot & Exit")
