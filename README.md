@@ -33,32 +33,30 @@
 
 3. Connect to WiFi to activate your Mac.
 
-4. Enter Recovery Mode & Open Safari.
+4. Enter Recovery Mode & Open Safari. If you ae using the BadKB version read the BadKB section of step 6 and skip to step 7.
 
 5. Navigate to https://github.com/Rekitctrl/bypass-mdm
 
 6. Copy the command below:
 
-  Current Functional Version:
+  Current Functional Versions:
 
   ```zsh
   curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/bypass-mdm-v2.sh -o bypass-mdm-v2.sh && chmod +x ./bypass-mdm-v2.sh && ./bypass-mdm-v2.sh
   ```
   BadKB Version:
-  
-  ```zsh
-  curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/bypass-mdm-badkb.sh -o bypass-mdm-badkb.sh && chmod +x ./bypass-mdm-badkb.sh && ./bypass-mdm-badkb.sh
-  ```
 
-7. Launch Terminal (Utilities > Terminal).
+  The script txt needs to be downloaded to your flipper. It is still a work in progress and has not been properly developed for offline use.
+
+7. Launch Terminal (Utilities > Terminal). If using BadKB select the input area and start the BadKB. The default username is Apple and the password is 1234. You can customize this by editing the .txt if needed. Skip to step 12
 
 8. Paste (<kbd>CMD</kbd> + <kbd>V</kbd>) and Run the script (<kbd>ENTER</kbd>)
 
-9. Preset username 'Apple' (Cannot be changed for reliability).
+9. Preset real name and username is 'Apple' but can be changed.
 
-10. Preset password '1234' (Cannot be changed for reliability).
+10. Preset password '1234' but can be changed.
 
-11. Wait for the script to finish & then reboot your Mac.
+11. Wait for the script to finish & then reboot your Mac if it has not auto rebooted.
 
 12. Sign in with user (Apple) & password (1234)
 
@@ -72,6 +70,6 @@
 
 17. Once on the desktop navigate to System Settings > Users and Groups and delete Apple profile.
 
-18. You're MDM free
+18. You have bypassed the MDM. To ensure continued uninterupted use, do not remove or change the blocked/rerouted domains in the hosts file. It is still safe to add more domains to the hosts file.
 
-###### Although it's virtually impossible to catch that you've removed the MDM (because it wasn't even configured), be aware that the serial number of the laptop will still be shown in the inventory system of your organization. This script removes MDM capabilities before it's configured locally, so it won't be available as a managed laptop to the organization. Use with caution. Probably a good idea to have a valid excuse as well. That is why I recommend a dual boot setup as it will allow you to periodically boot into the managed partition to allow the MDM to check in with your device.
+###### Although it's virtually impossible to catch that you've removed the MDM (because it wasn't even configured), be aware that the serial number of the laptop will still be shown in the inventory system of your organization. This script removes MDM capabilities before it's configured locally, so it won't be available as a managed laptop to the organization. Use with caution. It is probably a good idea to have a valid excuse as well. That is why I recommend a dual boot setup as it will allow you to periodically boot into the managed partition to allow the MDM to check in with your device.
