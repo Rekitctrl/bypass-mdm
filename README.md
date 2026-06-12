@@ -1,4 +1,4 @@
-# Bypass-MDM for MacOS (Tested up to MacOS Tahoe 26.3)
+# Bypass-MDM for MacOS (Tested up to MacOS Tahoe 26.5.1)
 
 ![mdm-screen](https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/mdm-screen.webp)
 
@@ -42,17 +42,12 @@
   Current Functional Version:
 
   ```zsh
-  curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/bypass-mdm.sh -o bypass-mdm.sh && chmod +x ./bypass-mdm.sh && ./bypass-mdm.sh
+  curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/bypass-mdm-v2.sh -o bypass-mdm-v2.sh && chmod +x ./bypass-mdm-v2.sh && ./bypass-mdm-v2.sh
   ```
   BadKB Version:
   
   ```zsh
   curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/bypass-mdm-badkb.sh -o bypass-mdm-badkb.sh && chmod +x ./bypass-mdm-badkb.sh && ./bypass-mdm-badkb.sh
-  ```
-  ⚠️ Beta Version:
-
-  ```zsh
-  curl https://raw.githubusercontent.com/Rekitctrl/bypass-mdm/main/beta-bypass-mdm.sh -o beta-bypass-mdm.sh && chmod +x ./beta-bypass-mdm.sh && ./beta-bypass-mdm.sh
   ```
 
 7. Launch Terminal (Utilities > Terminal).
